@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Knowledge Bound</title>
-    <link rel="stylesheet" href="/dist/styles.8f2013c7.css">
+    <link rel="stylesheet" href="./dist/styles.824dbdc8.css">
     <link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
     <div class="wrapper">
       <div id="nav-container">
-        <div class="logo-container">
-           <a href="#">Knowledge Bound</a>
-
+        <div class="logo-container" data-ng-init="init()">
+           <a urisref="main" href="#" class="text">Knowledge Bound</a>
+           <a href="#" class="logo"><img src="./styles/homebtn.png" style="height:50px; width:50px"></a>
         </div>
       </div>
 
@@ -27,13 +27,12 @@
     <!-- <script src="./js/app.js"></script>
     <script src="./js/controllers/mainCtrl.js"></script>
     <script src="./js/controllers/mainService.js"></script>
-    <script src="./js/controllers/resultsCtrl.js"></script>
-    <script src="./js/scrips.js"></script> -->
-    <script src="./node_modules/moment/moment.js"></script>
-    <script src="./node_modules/angular-moment/angular-moment.js"></script>
-
-    <script src="./dist/js/bundle.js"></script>
-
+    <script src="./js/controllers/resultsCtrl.js"></script> -->
+    <!-- <script src="./js/scrips.js"></script> -->
+    <!-- <script src="./js/timeDirective.js"></script> -->
+    <script src="./js/bundle.js"></script>
+    <script src="./../node_modules/moment/moment.js"></script>
+    <script src="./../node_modules/angular-moment/angular-moment.js"></script>
 
   </body>
 </html>

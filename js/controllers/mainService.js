@@ -9,4 +9,6 @@ angular.module('app').service('mainService', function($http) {
       console.log(resp.data.items)
     })
   }
+
+  this.selectedBook = {}
 })

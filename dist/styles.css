@@ -1,5 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@media (max-width: 700px) {
+  #nav-container {
+    background-color: white;
+    opacity: 0.6; }
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -25px; }
+  #timeContainer {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; } }
+
+@media (min-width: 701px) {
+  .logo {
+    display: none; }
+  #timeContainer {
+    color: white;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; } }
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: white; }
@@ -7,6 +34,7 @@ body {
 .body2 {
   background-image: url(/styles/back3.jpg);
   background-size: cover;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column; }
@@ -27,10 +55,6 @@ body {
   opacity: 0.9;
   font-family: 'Lobster', cursive; }
 
-.book-logo {
-  height: 5px;
-  width: 5px; }
-
 .mainContainer {
   display: flex;
   justify-content: center;
@@ -39,7 +63,19 @@ body {
   height: 75vh;
   width: 100%;
   padding: 20px;
-  margin-top: 150px; }
+  margin-top: 100px;
+  font-family: 'Lobster', cursive;
+  font-size: 48px; }
+
+.timeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  color: black;
+  text-align: center;
+  flex-wrap: wrap; }
 
 #inputBox {
   width: 75%;
@@ -52,7 +88,8 @@ body {
 
 #button {
   margin-left: 5px;
-  padding-top: 3px; }
+  padding-top: 3px;
+  margin-top: -15px; }
 
 .bookSearchContainer {
   display: flex;
@@ -60,32 +97,40 @@ body {
   align-self: center;
   width: 33%;
   height: 5vh;
-  margin-top: 75px;
-  
- }
+  margin-top: 75px; }
 
-.animate-show-hide.ng-hide {
-  opacity: 0;
-}
-
-.animate-show-hide.ng-hide-add,
-.animate-show-hide.ng-hide-remove {
-  transition: all linear 0.5s;
-}
-
-
-
-.searchResults {
-  width: auto;
-  height: auto;
+.results-container {
   display: flex;
-  border: 1px solid red; }
+  justify-content: center;
+  color: white; }
 
-/*results page*/
+.results a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 3px; }
+
+/*details page*/
 .header-container {
   background-image: url(/styles/header.jpg);
   background-size: cover;
   width: 100%;
   height: 25vh; }
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  padding: 20px; }
+
+.desc {
+  text-align: center; }
+
+.ui-button {
+  height: 25px;
+  width: 125px;
+  border-radius: 5px; }
 
 /*# sourceMappingURL=maps/styles.css.map */

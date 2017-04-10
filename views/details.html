@@ -1,0 +1,29 @@
+<body class="body3">
+  <div class="wrapper2">
+    <div class="header-container">
+    </div>
+
+    <div class="details">
+        <div class="bookImage"><img style="height:250px; width: 200px"src="{{selectedBook.volumeInfo.imageLinks.thumbnail}}"></div>
+
+      <div class="quickInfo">
+        <p id="quickP">Title: {{selectedBook.volumeInfo.title}}</p>
+        <p id="quickP">Authors: {{selectedBook.volumeInfo.authors[0]}}</p>
+        <p id="quickP">Category: {{selectedBook.volumeInfo.categories[0]}}</p>
+        <p id="quickP">Price: ${{selectedBook.saleInfo.retailPrice.amount}}</p>
+        <p id="quickP">Page Count: {{selectedBook.volumeInfo.pageCount}}</p>
+        <p id="quickP">Avg Rating: {{selectedBook.volumeInfo.averageRating}}/5</p>
+      </div>
+
+      <div class="desc">
+        <p>{{selectedBook.volumeInfo.description}}</p>
+      </div>
+
+      <div class="buyBtn">
+        <a href="{{selectedBook.volumeInfo.infoLink}}"><button class="ui-button">Buy Book</button></a>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</body>

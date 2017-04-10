@@ -1,4 +1,4 @@
-angular.module('app', ['ui.router', 'angularMoment']).config(function($stateProvider, $urlRouterProvider) {
+angular.module('app', ['ui.router']).config(function($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider
     .otherwise('/');
@@ -9,9 +9,9 @@ angular.module('app', ['ui.router', 'angularMoment']).config(function($stateProv
       controller: 'mainCtrl',
       url: '/'
     })
-    .state('results', {
-      templateUrl: './views/results.html',
-      controller: 'resultsCtrl',
-      url: '/results'
+    .state('details', {
+      templateUrl: './views/details.html',
+      controller: 'detailsCtrl',
+      url: '/details/:id'
     })
 })
