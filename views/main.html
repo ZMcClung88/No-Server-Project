@@ -1,0 +1,19 @@
+<body2 class="body2">
+
+
+    <div class="mainContainer" data-ng-init="init()">
+      <p>{{date}}</p>
+
+      <div class="bookSearchContainer ng-hide" ng-hide="hasSearchResults" ng-model="searchContainer">
+          <input id="inputBox" type="text" placeholder="Research Any Topic" ng-model="book" ng-keyPress="keyPress($event)">
+          <div  type="submit" id="button" ng-click="bookSearch(book)"><img src="/styles/magglass.png" style="height:30px; width30px" alt=""></div>
+        </div>
+      </div>
+
+      <div class="results" ng-repeat="books in booksArr">
+        {{books.volumeInfo.title}}
+      </div>
+
+    </div>
+
+</body2>

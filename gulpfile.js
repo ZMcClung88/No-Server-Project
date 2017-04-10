@@ -5,12 +5,13 @@ var gulp = require('gulp'),
     CacheBuster = require('gulp-cachebust'),
     print = require('gulp-print'),
     babel = require('gulp-babel'),
-    uglify = require('gulp-uglify')
+    uglify = require('gulp-uglify'),
+    minify = require('gulp-minify')
 
 var cachebust = new CacheBuster();
 
 gulp.task('build-css', function() {
-  return gulp.src('./styles/*')
+  return gulp.src('./styles/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(cachebust.resources())
@@ -26,6 +27,7 @@ gulp.task('build-js', function() {
     .pipe(babel({ presets: ['es2015'] }))
     .pipe(concat('bundle.js'))
     // .pipe(uglify())
+    //.pipe(minify())
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./dist/js'));
 });

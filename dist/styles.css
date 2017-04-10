@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: white; }
+
+.body2 {
+  background-image: url(/styles/back3.jpg);
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+#nav-container {
+  height: 25%;
+  width: 100%;
+  font-size: 34px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute; }
+
+.logo-container a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  opacity: 0.9;
+  font-family: 'Lobster', cursive; }
+
+.book-logo {
+  height: 5px;
+  width: 5px; }
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 75vh;
+  width: 100%;
+  padding: 20px;
+  margin-top: 150px; }
+
+#inputBox {
+  width: 75%;
+  height: 90%;
+  border-radius: 5px;
+  padding-left: 7px;
+  opacity: 0.9;
+  outline: none;
+  font-size: 18px; }
+
+#button {
+  margin-left: 5px;
+  padding-top: 3px; }
+
+.bookSearchContainer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 33%;
+  height: 5vh;
+  margin-top: 75px;
+  
+ }
+
+.animate-show-hide.ng-hide {
+  opacity: 0;
+}
+
+.animate-show-hide.ng-hide-add,
+.animate-show-hide.ng-hide-remove {
+  transition: all linear 0.5s;
+}
+
+
+
+.searchResults {
+  width: auto;
+  height: auto;
+  display: flex;
+  border: 1px solid red; }
+
+/*results page*/
+.header-container {
+  background-image: url(/styles/header.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 25vh; }
+
+/*# sourceMappingURL=maps/styles.css.map */
